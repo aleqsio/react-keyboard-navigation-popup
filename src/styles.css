@@ -6,3 +6,83 @@
   border: 2px solid #000;
   font-size: 2em;
 }
+.popupContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding-top: 32vh;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.popup {
+  width: 450px;
+  border-radius: 15px;
+  padding-bottom: 15px;
+  background-color: #e9e9e9;
+  border: 1px solid #111;
+  display: flex;
+  flex-direction: column;
+}
+.searchInput {
+  border: 0;
+  border-radius: 15px;
+  border-bottom: 1px solid #111;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: none;
+  outline: none;
+  font-size: 24px;
+  padding: 20px;
+}
+.searchInput:focus + .result {
+  background: #fff;
+}
+.result {
+  background: none;
+  color: inherit;
+  border: none;
+  border-bottom: 1px solid #111;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+.result:hover {
+  background: #c8c8c8;
+}
+.result:focus {
+  background: #fff;
+}
+
+
+.container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 10px 15px;
+}
+.label {
+  font-size: 16px;
+}
+.image {
+  width: 48px;
+  height: 48px;
+  border-radius: 2px;
+}
+.keyCombinationIndicator {
+  border: 1px solid #111;
+  border-radius: 1000px;
+  color: #111;
+  margin: 10px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
